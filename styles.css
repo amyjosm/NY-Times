@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 45px;
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    }
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    .container {
+        align-items: center;
+        width: 800px;
+        padding: 5px;
+    }
+
+    #search-box {
+        border: 1px solid;
+    }
+   

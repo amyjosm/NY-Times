@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>New York Times</title>
+</head>
+<header>
+    <div class="container">
+        <h1><i class="fa fa-newspaper-o"></i> New York Times Search</h1>
+    </div>
+</header>
+
+<body>
+
+    <div class="container" id="search-box">
+            
+        <h2><i class="fa fa-list-alt"></i> Search Parameters</h2>
+    </div>
+
+    <div class="container" id="search-box">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-lg">
+                    <label for="inputSearch">Search Term:</label>
+                    <input type="search" class="form-control" id="search-input" name="q" placeholder="Enter text here..."
+                        required>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="inputRecords">Number of Records to Retrieve:</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="inputStartYear">Start Year (Optional):</label>
+                <input type="text" class="form-control" id="inputStartYear" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="inputEndYear">End Year (Optional):</label>
+                <input type="text" class="form-control" id="inputEndYear" placeholder="">
+            </div>
+
+            <button type="button" class="btn btn-light" id="search-button"></button>Search</button>
+            <button type="button" class="btn btn-light" id="clear-button">Clear Results</button>
+        </form>
+    </div>
+
+    <div class="container" id="search-box">
+        <h2><i class="fa fa-table"></i> Top Articles</h2>
+    </div>
+    <div class="container" id="article-container"></div>
+    </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</html>
